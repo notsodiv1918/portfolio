@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<title>Divyansh Rangari | Portfolio</title>
+<meta name="description" content="Portfolio of Divyansh Rangari, full-stack developer and AI/ML builder at IIIT Naya Raipur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500&display=swap">
+<script>
+(function(){
+  var d=document.documentElement;
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  d.classList.add('build');
+  var strikes=0;
+  setTimeout(function w(){
+    if(!d.classList.contains('build'))return;
+    if(document.visibilityState==='visible'){
+      var ok=window.__alive&&performance.now()-window.__alive<3000;
+      strikes=ok?0:strikes+1;
+      if(strikes>=2){d.classList.remove('build');return}
+    }
+    setTimeout(w,2500);
+  },7000);
+})();
+</script>
+</head>
+<body>
+<div id="root"></div>
+<script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
